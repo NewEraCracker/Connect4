@@ -19,22 +19,22 @@ public class Teste
 		testeUtil();
 		Util.println();
 
-		// Corre o teste da pontuaÁ„o
+		// Corre o teste da pontua√ß√£o
 		testePontuacao();
 		Util.println();
 
-		// Corre o teste das jogadas autom·ticas
+		// Corre o teste das jogadas autom√°ticas
 		testeComputador();
 		Util.println();
 
-		// Corre o teste do verificador de victÛria
+		// Corre o teste do verificador de vict√≥ria
 		testeWinCheck();
 		Util.println();
 	}
 
 	/**
-	 * Teste de jogadas autom·ticas
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * Teste de jogadas autom√°ticas
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private static void testeComputador()
 	{
@@ -63,8 +63,8 @@ public class Teste
 	}
 
 	/**
-	 * Teste de verificador de vitÛria
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * Teste de verificador de vit√≥ria
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private static void testeWinCheck()
 	{
@@ -126,12 +126,12 @@ public class Teste
 	}
 
 	/**
-	 * Teste da classe da pontuaÁ„o
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * Teste da classe da pontua√ß√£o
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private static void testePontuacao()
 	{
-		pontuacao.add(1,"Jo„o");
+		pontuacao.add(1,"Jo√£o");
 		pontuacao.add(10,"Maria");
 		pontuacao.add(2,"Jorge");
 
@@ -139,8 +139,8 @@ public class Teste
 	}
 
 	/**
-	 * Teste de mÈtodos implementados na classe Util
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * Teste de m√©todos implementados na classe Util
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private static void testeUtil()
 	{

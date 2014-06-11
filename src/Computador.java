@@ -1,9 +1,9 @@
 
 public class Computador
 {
-	private Aleatorio aleatorio; // Gerador de n˙meros aleatÛrios
-	private Tabuleiro tabuleiro; // Tabuleiro onde as jogadas autom·ticas ser„o inseridas
-	private int nivel; // NÌvel de dificuldade
+	private Aleatorio aleatorio; // Gerador de n√∫meros aleat√≥rios
+	private Tabuleiro tabuleiro; // Tabuleiro onde as jogadas autom√°ticas ser√£o inseridas
+	private int nivel; // N√≠vel de dificuldade
 	private char letra; // Letra do computador
 
 	/** Constructor */
@@ -15,13 +15,13 @@ public class Computador
 		this.letra = letra;
 	}
 
-	/** Para modificar o nÌvel */
+	/** Para modificar o n√≠vel */
 	public void setNivel( int nivel )
 	{
 		this.nivel = nivel;
 	}
 
-	/** Processador de jogo autom·tico */
+	/** Processador de jogo autom√°tico */
 	public void auto()
 	{
 		switch(nivel)
@@ -42,8 +42,8 @@ public class Computador
 	}
 
 	/**
-	 * Jogada aleatÛria
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * Jogada aleat√≥ria
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private boolean random()
 	{
@@ -58,7 +58,7 @@ public class Computador
 
 	/**
 	 * Jogada de ataque
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private boolean ataque()
 	{
@@ -68,7 +68,7 @@ public class Computador
 
 	/**
 	 * Jogada de defesa
-	 * !!! SÛ para utilizaÁ„o nesta classe !!!
+	 * !!! S√≥ para utiliza√ß√£o nesta classe !!!
 	 */
 	private boolean defesa()
 	{

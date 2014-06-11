@@ -32,13 +32,13 @@ public class Jogada
 		}
 	}
 
-	/** Menu com opções */
+	/** Menu com opÃ§Ãµes */
 	public boolean menu( char option, char jogador )
 	{
 		return menu.run( option, jogador );
 	}
 
-	/** Verificar se houve vitória do jogador */
+	/** Verificar se houve vitÃ³ria do jogador */
 	public boolean winJogada( char jogador )
 	{
 		return tabuleiro.runWinCheck( jogador );

@@ -13,8 +13,8 @@ public class Menu
 	}
 
 	/**
-	 * Menu com as opções
-	 * Retorna true se houve uma jogada ou acção processada
+	 * Menu com as opÃ§Ãµes
+	 * Retorna true se houve uma jogada ou acÃ§Ã£o processada
 	 */
 	public boolean run( char option, char jogador )
 	{
@@ -38,30 +38,30 @@ public class Menu
 				return runHelp();
 		}
 
-		Util.println( "Opção não implementada." );
+		Util.println( "OpÃ§Ã£o nÃ£o implementada." );
 		return false;
 	}
 
 	/**
 	 * Imprime o texto de ajuda
-	 * Retorna falso para forçar o utilizador a introduzir uma opção.
+	 * Retorna falso para forÃ§ar o utilizador a introduzir uma opÃ§Ã£o.
 	 */
 	private boolean runHelp()
 	{
 		Util.println(
-				"P – Pontuação"+Util.EOL+
-				"N – Novo jogo"+Util.EOL+
-				"U – Undo"+Util.EOL+
-				"F – Fim"+Util.EOL+
-				"T – Tabela Top 10"+Util.EOL+
-				"H – Help"
+				"P â€“ PontuaÃ§Ã£o"+Util.EOL+
+				"N â€“ Novo jogo"+Util.EOL+
+				"U â€“ Undo"+Util.EOL+
+				"F â€“ Fim"+Util.EOL+
+				"T â€“ Tabela Top 10"+Util.EOL+
+				"H â€“ Help"
 				);
 		return false;
 	}
 
 	/**
 	 * Imprime a tabela Top 10
-	 * Retorna falso para forçar o utilizador a introduzir uma opção.
+	 * Retorna falso para forÃ§ar o utilizador a introduzir uma opÃ§Ã£o.
 	 */
 	private boolean runTabela()
 	{
@@ -70,7 +70,7 @@ public class Menu
 		if( tabela != null )
 			Util.println( tabela );
 		else
-			Util.println( "Não existe tabela Top 10." );
+			Util.println( "NÃ£o existe tabela Top 10." );
 
 		return false;
 	}

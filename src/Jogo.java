@@ -51,7 +51,7 @@ public class Jogo
 
 	/**
 	 * Pede e processa a jogada de um jogador
-	 * !!! Só para utilização nesta classe !!!
+	 * !!! SÃ³ para utilizaÃ§Ã£o nesta classe !!!
 	 */
 	private boolean jogada( char jogador)
 	{

@@ -1,16 +1,16 @@
 
 public class Tabuleiro
 {
-	// Array que contém o tabuleiro
+	// Array que contÃ©m o tabuleiro
 	private char[][] tabuleiro;
 
-	// Número de peças em linha para considerar jogo ganho
+	// NÃºmero de peÃ§as em linha para considerar jogo ganho
 	private int inLine;
 
 	/** Inicia o tabuleiro de forma a ser possivel jogar */
 	public Tabuleiro( int linhas, int colunas, int inLine)
 	{
-		// Número de peças em linha para considerar jogo ganho
+		// NÃºmero de peÃ§as em linha para considerar jogo ganho
 		this.inLine = inLine;
 
 		// Criar tabuleiro
@@ -50,7 +50,7 @@ public class Tabuleiro
 	/** Limpar tabuleiro */
 	public void clear()
 	{
-		// Preencher tabuleiro com espaços
+		// Preencher tabuleiro com espaÃ§os
 		for(int x=0; x<tabuleiro.length; x++)
 		{
 			for(int y=0; y<tabuleiro[x].length; y++)
@@ -64,7 +64,7 @@ public class Tabuleiro
 		Util.print( toString() );
 	}
 
-	/** Retorna o número de peças em linha para considerar jogo ganho */
+	/** Retorna o nÃºmero de peÃ§as em linha para considerar jogo ganho */
 	public int getInLine()
 	{
 		return inLine;
@@ -76,7 +76,7 @@ public class Tabuleiro
 		return tabuleiro;
 	}
 
-	/** Retorna o valor de uma posição do tabuleiro */
+	/** Retorna o valor de uma posiÃ§Ã£o do tabuleiro */
 	public char getTabuleiro( int x, int y )
 	{
 		return tabuleiro[x][y];
@@ -89,7 +89,7 @@ public class Tabuleiro
 
 		for(int y=0; y<tabuleiro[x].length; y++)
 		{
-			// Posição não preenchida
+			// PosiÃ§Ã£o nÃ£o preenchida
 			if( isPosJogador(x, y, ' ') )
 			{
 				tabuleiro[x][y] = jogador;
@@ -106,7 +106,7 @@ public class Tabuleiro
 		{
 			for(int y=0; y<tabuleiro[x].length; y++)
 			{
-				// Se for encontrada uma posição não preenchida
+				// Se for encontrada uma posiÃ§Ã£o nÃ£o preenchida
 				if( isPosJogador(x, y, ' ') )
 					return false;
 			}
@@ -119,7 +119,7 @@ public class Tabuleiro
 	{
 		int count = 0;
 
-		// X do início para o fim
+		// X do inÃ­cio para o fim
 		for(int x=0; x<tabuleiro.length; x++)
 		{
 			// Vertical
@@ -146,7 +146,7 @@ public class Tabuleiro
 			}
 		}
 
-		// Y do início para o fim
+		// Y do inÃ­cio para o fim
 		for(int y=0; y<tabuleiro[0].length; y++)
 		{
 			// Horizontal
@@ -173,7 +173,7 @@ public class Tabuleiro
 			}
 		}
 
-		// X do fim para o início
+		// X do fim para o inÃ­cio
 		for(int x=tabuleiro.length-1; x>=0; x--)
 		{
 			// Diagonal
@@ -190,7 +190,7 @@ public class Tabuleiro
 			}
 		}
 
-		// Y do fim para o início
+		// Y do fim para o inÃ­cio
 		for(int y=tabuleiro[0].length-1; y>=0; y--)
 		{
 			// Diagonal
@@ -211,8 +211,8 @@ public class Tabuleiro
 	}
 
 	/**
-	 * Retorna uma contagem incrementada se o jogador ocupar x.y, senão retorna 0
-	 * !!! Só para utilização nesta classe !!!
+	 * Retorna uma contagem incrementada se o jogador ocupar x.y, senÃ£o retorna 0
+	 * !!! SÃ³ para utilizaÃ§Ã£o nesta classe !!!
 	 */
 	private int countIncrement( int x, int y, char jogador, int count )
 	{
@@ -221,8 +221,8 @@ public class Tabuleiro
 	}
 
 	/**
-	 * Verifica se a posição indicada contém uma jogada do jogador
-	 * !!! Só para utilização nesta classe !!!
+	 * Verifica se a posiÃ§Ã£o indicada contÃ©m uma jogada do jogador
+	 * !!! SÃ³ para utilizaÃ§Ã£o nesta classe !!!
 	 */
 	private boolean isPosJogador( int x, int y, char jogador )
 	{

@@ -14,7 +14,7 @@ public class Pontuacao
 		this.topScoresFile = topScoresFile;
 	}
 
-	/** Retorna o conteúdo do ficheiro com as pontuações */
+	/** Retorna o conteÃºdo do ficheiro com as pontuaÃ§Ãµes */
 	public String toString()
 	{
 		String ret = new String("");
@@ -32,10 +32,10 @@ public class Pontuacao
 		return ret;
 	}
 
-	/** Adiciona uma pontuação ao ficheiro das pontuações */
+	/** Adiciona uma pontuaÃ§Ã£o ao ficheiro das pontuaÃ§Ãµes */
 	public boolean add( int pontos, String jogador )
 	{
-		// Obter pontuações
+		// Obter pontuaÃ§Ãµes
 		String contents = toString();
 
 		// Preparar para escrita
@@ -44,33 +44,33 @@ public class Pontuacao
 		if(out == null)
 			return false;
 
-		// Escrever os conteúdos do ficheiro
+		// Escrever os conteÃºdos do ficheiro
 		if(contents != null)
 			out.print(contents);
 
-		// Adicionar nova pontuação
+		// Adicionar nova pontuaÃ§Ã£o
 		out.println(pontos+"\t"+jogador);
 
 		// Fechar o ficheiro
 		out.close();
 
-		// Correr a função de ordenação e retornar o seu resultado
+		// Correr a funÃ§Ã£o de ordenaÃ§Ã£o e retornar o seu resultado
 		return sort();
 	}
 
 	/**
-	 * Organiza o ficheiro das pontuações
-	 * !!! Só para utilização nesta classe !!!
+	 * Organiza o ficheiro das pontuaÃ§Ãµes
+	 * !!! SÃ³ para utilizaÃ§Ã£o nesta classe !!!
 	 */
 	private boolean sort()
 	{
-		// Obter pontuações
+		// Obter pontuaÃ§Ãµes
 		String contents = toString();
 
 		if(contents == null)
 			return false;
 
-		String[] scoresArr = contents.split( Util.EOL ); // Array de pontuações
+		String[] scoresArr = contents.split( Util.EOL ); // Array de pontuaÃ§Ãµes
 		int[] scoresVals = new int[ scoresArr.length ]; // Array com valores
 		String[][] scoresNomes = new String[ scoresArr.length ][2]; // Array com valores e nomes
 
@@ -96,11 +96,11 @@ public class Pontuacao
 		// Escrever no ficheiro
 		for(int i=0; i<scoresArr.length; i++)
 		{
-			// Para só escrever até ao máximo de pontuações
+			// Para sÃ³ escrever atÃ© ao mÃ¡ximo de pontuaÃ§Ãµes
 			if( i>=maxTopScores )
 				break;
 
-			int pos = scoresArr.length-1-i; // Posição do valor
+			int pos = scoresArr.length-1-i; // PosiÃ§Ã£o do valor
 			int valor = scoresVals[pos]; // Valor
 
 			// Encontrar o nome

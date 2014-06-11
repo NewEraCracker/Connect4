@@ -1,7 +1,7 @@
 
 public class Util
 {
-	/** ContÈm o separador de linhas */
+	/** Cont√©m o separador de linhas */
 	public static final String EOL = System.getProperty("line.separator");
 
 	/** Imprime um inteiro */
@@ -63,7 +63,7 @@ public class Util
 			}
 		}
 
-		// Alterar o sinal se necess·rio
+		// Alterar o sinal se necess√°rio
 		if(txt.charAt(0) == '-')
 		{
 			ret *= -1;

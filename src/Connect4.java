@@ -10,7 +10,7 @@ public class Connect4
 		// Verifica argumentos
 		if( args != null && args.length == 2 && args[0].equals("auto") )
 		{
-			// Calculamos o nível
+			// Calculamos o nÃ­vel
 			nivelComputador = args[1].charAt(0)-'0';
 
 			// E ligamos o contraComputador

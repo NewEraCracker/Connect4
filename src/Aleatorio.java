@@ -7,7 +7,7 @@ public class Aleatorio
 	/** Constructor deixado vazio intencionalmente */
 	public Aleatorio(){}
 
-	/** Gera um inteiro aleatório entre 0 (inclusivé) e n (exculsivé) */
+	/** Gera um inteiro aleatÃ³rio entre 0 (inclusivÃ©) e n (exculsivÃ©) */
 	public int nextInt(int n)
 	{
 		return random.nextInt(n);

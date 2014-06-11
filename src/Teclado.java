@@ -13,7 +13,7 @@ public class Teclado
 		return scanner.next();
 	}
 
-	/** Imprimir quest„o e ler string */
+	/** Imprimir quest√£o e ler string */
 	public String next( String question )
 	{
 		Util.print(question+" ");
@@ -26,7 +26,7 @@ public class Teclado
 		return scanner.nextInt();
 	}
 
-	/** Imprimir quest„o e ler inteiro */
+	/** Imprimir quest√£o e ler inteiro */
 	public int nextInt( String question )
 	{
 		Util.print(question+" ");
@@ -39,7 +39,7 @@ public class Teclado
 		return next().charAt(0);
 	}
 
-	/** Imprimir quest„o e ler char */
+	/** Imprimir quest√£o e ler char */
 	public char nextChar( String question )
 	{
 		Util.print(question+" ");

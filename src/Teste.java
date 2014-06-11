@@ -144,11 +144,6 @@ public class Teste
 	 */
 	private static void testeUtil()
 	{
-		Util.println( "1000" );
-		Util.println( Util.powInt(10, 3) );
-
-		Util.println();
-
 		Util.println( "1337" );
 		Util.println( Util.parseInt("1337") );
 	}

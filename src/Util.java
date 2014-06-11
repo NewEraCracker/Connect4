@@ -51,28 +51,22 @@ public class Util
 	/** Retorna um inteiro obtido a partir da String */
 	public static int parseInt( String txt )
 	{
-		txt = txt.trim();
-
 		int ret = 0;
 
 		for(int i=0; i<txt.length(); i++)
-			ret += (txt.charAt(i)-'0') * powInt( 10, (txt.length()-1-i) );
-
-		return ret;
-	}
-
-	/**
-	 * Retorna o resultado de um número 'n' elevado à potência 'pow'.
-	 * Só usar para 'n' e 'pow' positivos.
-	 */
-	public static int powInt( int n, int pow )
-	{
-		int ret = 1;
-
-		while( pow > 0 )
 		{
-			ret *= n;
-			pow--;
+			// Converter char para inteiro
+			if('0' <= txt.charAt(j) && txt.charAt(j) <= '9')
+			{
+				ret *= 10;
+				ret += txt.charAt(j) - '0';
+			}
+		}
+
+		// Alterar o sinal se necessário
+		if(txt.charAt(0) == '-')
+		{
+			ret *= -1;
 		}
 
 		return ret;

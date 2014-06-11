@@ -6,7 +6,7 @@ public class Aleatorio
 
 	/** Constructor deixado vazio intencionalmente */
 	public Aleatorio(){}
-	
+
 	/** Gera um inteiro aleatório entre 0 (inclusivé) e n (exculsivé) */
 	public int nextInt(int n)
 	{

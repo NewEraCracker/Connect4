@@ -4,7 +4,7 @@ public class Menu
 {
 	private Pontuacao pontuacao;
 	private Tabuleiro tabuleiro;
-	
+
 	/** Constructor */
 	public Menu( Tabuleiro tabuleiro, Pontuacao pontuacao )
 	{
@@ -58,7 +58,7 @@ public class Menu
 				);
 		return false;
 	}
-	
+
 	/**
 	 * Imprime a tabela Top 10
 	 * Retorna falso para forçar o utilizador a introduzir uma opção.

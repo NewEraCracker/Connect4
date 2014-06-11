@@ -17,11 +17,11 @@ public class Jogada
 	public void askJogada( char jogador )
 	{
 		String read = teclado.next(jogador+" >");
-		
+
 		if( Util.isInteger(read) )
 		{
 			int xPos = Util.parseInt(read);
-			
+
 			if( !tabuleiro.setTabuleiro( xPos, jogador ) )
 				askJogada( jogador );
 		}
@@ -31,7 +31,7 @@ public class Jogada
 				askJogada( jogador );
 		}
 	}
-	
+
 	/** Menu com opções */
 	public boolean menu( char option, char jogador )
 	{

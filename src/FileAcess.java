@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Classe utilitária para acesso a ficheiros.<br/>
- * Para utilização na unidade curricular <em> Programação </em> dos cursos do ISEL. 
+ * Para utilização na unidade curricular <em> Programação </em> dos cursos do ISEL.
  * @author Pedro Pereira
  */
 public final class FileAcess {
@@ -14,7 +14,7 @@ public final class FileAcess {
 	 * Proibe instanciar objectos desta classe.
 	 */
 	private FileAcess() {} // Construtor privado
-	
+
 	/**
 	 * Permite a leitura de ficheiros de texto.
 	 * <p>
@@ -27,12 +27,12 @@ public final class FileAcess {
 	 * No final da utilização, deve ser chamado o método {@code close()}
 	 * do objecto {@code Scanner}.
 	 * </p>
-	 *    
+	 *
      * @param	fileName Nome do ficheiro de texto a abrir para leitura.
-     * 
-     * @return  referência para objecto do tipo Scanner para acesso de leitura, 
+     *
+     * @return  referência para objecto do tipo Scanner para acesso de leitura,
      * 			{@code null} se o ficheiro não existe.
- 	 * 
+ 	 *
 	 */
 	public static Scanner toRead(String fileName){
 		try {
@@ -41,30 +41,30 @@ public final class FileAcess {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Permite a escrita de ficheiros de texto.
 	 * <p>
 	 * 	Método estático que recebe como argumento o nome do ficheiro de texto a escrever,
-	 * 	e retorna uma referência para um objecto do tipo {@code PrintStream} para acesso 
+	 * 	e retorna uma referência para um objecto do tipo {@code PrintStream} para acesso
 	 *  de escrita.<br/>
 	 *  Retorna null quando houver um erro na criacao do ficheiro.<br/>
 	 *  No final, deve ser chamado o método {@code close()} do objecto {@code PrintStream}.
-	 *  
+	 *
      * @param	fileName Nome do ficheiro de texto a abrir para escrita.
-     * 
-     * @return  referência para objecto do tipo {@code PrintStream} para acesso de escrita, 
+     *
+     * @return  referência para objecto do tipo {@code PrintStream} para acesso de escrita,
      * 			{@code null} se houve erro na criação do ficheiro.
- 	 * 
+ 	 *
 	 */
-	public static PrintStream toWrite(String fileName){	
+	public static PrintStream toWrite(String fileName){
 		try {
 			return new PrintStream(new File(fileName));
 		} catch (Exception e) {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Exemplo de utilização da classe {@code FileAcess}.<br/>
 	 * Lê os valores inteiros que constam no ficheiro de texto <em>Valores.txt</em>.<br/>

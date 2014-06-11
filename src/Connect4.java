@@ -6,7 +6,7 @@ public class Connect4
 	{
 		boolean contraComputador = false;
 		int nivelComputador = 0;
-		
+
 		// Verifica argumentos
 		if( args != null && args.length == 2 && args[0].equals("auto") )
 		{
@@ -17,11 +17,11 @@ public class Connect4
 			if( nivelComputador >= 1 && nivelComputador <= 3 )
 				contraComputador = true;
 		}
-		
+
 		// Criar jogo
 		Jogo jogo = new Jogo( contraComputador, nivelComputador );
 
-		int nEmpates=0, xGanhos=0, oGanhos=0;		
+		int nEmpates=0, xGanhos=0, oGanhos=0;
 
 		for(int nJogos = 0; nJogos < 3; nJogos++)
 		{

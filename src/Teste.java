@@ -124,7 +124,7 @@ public class Teste
 		tabuleiro.print();
 		if( tabuleiro.runWinCheck('O') ) Util.println("OK");
 	}
-	
+
 	/**
 	 * Teste da classe da pontuação
 	 * !!! Só para utilização nesta classe !!!
@@ -137,7 +137,7 @@ public class Teste
 
 		Util.println( pontuacao.toString() );
 	}
-	
+
 	/**
 	 * Teste de métodos implementados na classe Util
 	 * !!! Só para utilização nesta classe !!!

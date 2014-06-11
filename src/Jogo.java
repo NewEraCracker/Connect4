@@ -17,7 +17,7 @@ public class Jogo
 	private Pontuacao pontuacao = new Pontuacao( MAX_TOP_SCORES, TOP_SCORES_FILE );
 	private Computador computador = new Computador( tabuleiro, 0, LETRA_COMPUTADOR);
 	private Jogada jogada = new Jogada( tabuleiro, pontuacao );
-	
+
 	/** Constructor */
 	public Jogo( boolean contraComputador, int nivelComputador )
 	{
@@ -29,7 +29,7 @@ public class Jogo
 	public char run()
 	{
 		tabuleiro.clear();
-		
+
 		while( !tabuleiro.isFull() )
 		{
 			if( jogada('X') )

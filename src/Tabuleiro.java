@@ -146,7 +146,7 @@ public class Tabuleiro
 			}
 		}
 
-		// Y do início para o fim		
+		// Y do início para o fim
 		for(int y=0; y<tabuleiro[0].length; y++)
 		{
 			// Horizontal

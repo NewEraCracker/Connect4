@@ -56,10 +56,10 @@ public class Util
 		for(int i=0; i<txt.length(); i++)
 		{
 			// Converter char para inteiro
-			if('0' <= txt.charAt(j) && txt.charAt(j) <= '9')
+			if('0' <= txt.charAt(i) && txt.charAt(i) <= '9')
 			{
 				ret *= 10;
-				ret += txt.charAt(j) - '0';
+				ret += txt.charAt(i) - '0';
 			}
 		}
 
